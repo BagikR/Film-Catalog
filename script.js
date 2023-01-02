@@ -19,10 +19,8 @@ function getApi (param){
     request.open('GET', `https://www.omdbapi.com/?apikey=858c410f&${param}`);
     request.onload = ()=>{
         if (request.status >= 200 && request.status < 300 && !(/plot=/).test(param)){
-            console.log(request.response);
             getFilm(request.response);
         } else if(request.status >= 200 && request.status < 300 && (/plot=/).test(param)){
-            console.log(request.response);
             showDetails(request.response);
         }
          else{

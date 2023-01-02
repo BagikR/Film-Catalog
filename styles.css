@@ -1,0 +1,211 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(241, 229, 215);
+}
+
+.searchDiv{
+    width: 30%;
+    margin: 1% auto;
+    margin-bottom: 2%;
+    height: max-content;
+    padding: 1%;
+    box-shadow: 6px 7px 5px 0px #020202;
+    background: rgb(236, 197, 152);
+    box-sizing: border-box;
+}
+
+.searchDiv h2{
+    text-align: center;
+    margin-bottom: 2%;
+    color: rgb(65, 63, 63);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid darkgray;
+    border-radius: 5%;
+    padding: 4% 0;
+    width: 90%;
+    margin: 0 auto 1%;
+}
+
+label{
+    width: 90%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+span{
+    display: inline-block;
+    font-weight: bold;
+    width: 10%;
+}
+
+input, select{
+    width: 80%;
+    padding: 1%;
+}
+
+select{
+    width: 83%;
+}
+
+.search{
+    width: 90%;
+    padding: 1.5%;
+    background:darkgray;
+    border: 1px solid rgb(36, 35, 35);
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(51, 43, 43);
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.resDiv{
+    margin: 1% auto;
+    width: 90%;
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: repeat(4, 23%);
+    box-sizing: border-box;
+}
+
+.resultDivs{
+    height: 30vh;
+    padding: 2%;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    overflow: auto;
+}
+
+.resultDivs img{
+    width: 40%;
+    height: 95%;
+}
+.resultText{
+    float: right;
+    width: 50%;
+}
+
+.pigDiv{
+    width: 50%;
+    padding: 2%;
+    padding-bottom: 1%;
+    box-sizing: border-box;
+    display: flex;
+    overflow-x: auto;
+    margin: 1% auto;
+}
+
+.pugBtn{
+    padding: .5% 1%;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 2%;
+    font-size: small;
+    background: lightgray;
+    cursor: pointer;
+}
+
+.pugBtn:not(:last-of-type){
+    margin-right: 1%;
+}
+
+.detDiv{
+    width: 90%;
+    margin: 1% auto;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.showTitle{
+    text-align: center;
+}
+
+.posterDiv{
+    margin-right: 1%;
+    width: 25%;
+}
+
+.posterDiv img{
+    width: 95%;
+}
+
+.posterTable{
+    width: 70%;
+}
+
+.posterTable tr td:first-child{
+    width: 20%;
+}
+
+.posterTable tr td:last-child{
+    width: 80%;
+}
+
+@media screen and (max-width:999px){
+    .searchDiv{
+        width: 45%;
+    }
+
+    .resDiv{
+        width: 100%;
+    }
+
+    .pigDiv{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 799px){
+    .searchDiv{
+        width: 65%;
+    }
+
+    .resDiv{
+        width: 90%;
+        grid-template-columns: repeat(2, 48%);
+        margin-top: 4%;
+        margin-bottom: 10%;
+    }
+
+    .pigDiv{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 449px){
+    .searchDiv{
+        width: 95%;
+        padding: 1% 0;
+        padding-bottom: 5%;
+        margin-top: 4%;
+    }
+
+    .resDiv{
+        grid-template-columns: repeat(1, 100%);
+        grid-gap: 0;
+        margin-top: 4%;
+        margin-bottom: 3%;
+        padding: 0;
+
+    }
+
+    .resultDivs{
+        margin-bottom: 2%;
+    }
+
+    .pigDiv{
+        width: 90%;
+    }
+
+    table tr td{
+        font-size: small;
+    }
+}

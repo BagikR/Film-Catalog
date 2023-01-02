@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="searchDiv">
+        <h2>Search:</h2>
+        <form name="form">
+            <label><span>Title:</span>
+                <input type="text" name="title">
+            </label>
+            <label><span>Type:</span>
+                <select name="type">
+                    <option value="movie">Movie</option>
+                    <option value="series">Series</option>
+                </select>
+            </label>
+            <button type="button" name="search" class="search">Search</button>
+        </form>
+    </div>
+    <div class="resDiv"></div>
+    <div class="pigDiv"></div>
+    <h2 class="showTitle"></h2>
+    <div class="detDiv"></div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
